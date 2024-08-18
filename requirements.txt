@@ -1,6 +1,7 @@
 git+https://github.com/vpcreatz/pyrofork-adv
 tgcrypto
 motor
+pyrofork
 marshmallow
 umongo
 pymongo

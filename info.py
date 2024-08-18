@@ -73,12 +73,12 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Files')
 
 # Links
-SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/HA_Bots_Support')
+SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/kfcienmas_dicussion')
 OWNER_USERNAME = environ.get("OWNER_USERNAME", "https://t.me/Ask_any_Movie_1")
-UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/HA_Bots')
-FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/HA_Films_World')
-TUTORIAL = environ.get("TUTORIAL", "https://t.me/HA_Bots")
-VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/HA_Bots")
+UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/KFCINEMAS')
+FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/KFCINEMAS')
+TUTORIAL = environ.get("TUTORIAL", "https://t.me/KFCINEMAS")
+VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/KFCINEMAS")
 
 # Bot settings
 DELETE_TIME = int(environ.get('DELETE_TIME', 3600)) # Add time in seconds

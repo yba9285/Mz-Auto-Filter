@@ -80,24 +80,24 @@ TUTORIAL = environ.get("TUTORIAL", "https://t.me/KFCINEMAS")
 VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/KFCINEMAS")
 
 # Bot settings
-DELETE_TIME = int(environ.get('DELETE_TIME', 3600)) # Add time in seconds
+DELETE_TIME = int(environ.get('DELETE_TIME', 600)) # Add time in seconds
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 MAX_BTN = int(environ.get('MAX_BTN', 10))
 LANGUAGES = [language.lower() for language in environ.get('LANGUAGES', ' english  kannada ').split()]
 QUALITY = [quality.lower() for quality in environ.get('QUALITY', '360p 480p 720p 1080p 2160p').split()]
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", script.IMDB_TEMPLATE)
 FILE_CAPTION = environ.get("FILE_CAPTION", script.FILE_CAPTION)
-SHORTLINK_URL = environ.get("SHORTLINK_URL", "")
-SHORTLINK_API = environ.get("SHORTLINK_API", "36f1ae74ba1aa01e5bd73bdd0bc22aa915443501")
-VERIFY_EXPIRE = int(environ.get('VERIFY_EXPIRE', 86400)) # Add time in seconds
+SHORTLINK_URL = environ.get("SHORTLINK_URL", "api.shareus.io")
+SHORTLINK_API = environ.get("SHORTLINK_API", "3r4NNBapROWiiOZHPEyNK9PM8oj1")
+VERIFY_EXPIRE = int(environ.get('VERIFY_EXPIRE', 54000)) # Add time in seconds
 WELCOME_TEXT = environ.get("WELCOME_TEXT", script.WELCOME_TEXT)
 INDEX_EXTENSIONS = [extensions.lower() for extensions in environ.get('INDEX_EXTENSIONS', 'mp4 mkv').split()]
 PM_FILE_DELETE_TIME = int(environ.get('PM_FILE_DELETE_TIME', '3600'))
 
 # boolean settings
 IS_PM_SEARCH = is_enabled('IS_PM_SEARCH', False)
-IS_VERIFY = is_enabled('IS_VERIFY', False)
-AUTO_DELETE = is_enabled('AUTO_DELETE', False)
+IS_VERIFY = is_enabled('IS_VERIFY', True)
+AUTO_DELETE = is_enabled('AUTO_DELETE', True)
 WELCOME = is_enabled('WELCOME', False)
 PROTECT_CONTENT = is_enabled('PROTECT_CONTENT', False)
 LONG_IMDB_DESCRIPTION = is_enabled("LONG_IMDB_DESCRIPTION", False)
@@ -105,7 +105,7 @@ LINK_MODE = is_enabled("LINK_MODE", True)
 AUTO_FILTER = is_enabled('AUTO_FILTER', True)
 IMDB = is_enabled('IMDB', True)
 SPELL_CHECK = is_enabled("SPELL_CHECK", True)
-SHORTLINK = is_enabled('SHORTLINK', False)
+SHORTLINK = is_enabled('SHORTLINK', True)
 
 #premium info
 PAYMENT_QR = environ.get('PAYMENT_QR', 'https://telegra.ph/file/d70873ccc021e6c62acec.jpg')

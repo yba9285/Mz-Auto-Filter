@@ -37,7 +37,7 @@ PORT = int(environ.get('PORT', '80'))
 PICS = (environ.get('PICS', 'https://telegra.ph/file/7e466d274a7c495739ee7.jpg')).split()
 
 # Bot Admins
-ADMINS = environ.get('ADMINS', '')
+ADMINS = environ.get('ADMINS', '5673859971')
 if len(ADMINS) == 0:
     print('Error - ADMINS is missing, exiting now')
     exit()
@@ -74,7 +74,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Files')
 # Links
 SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/kfcienmas_dicussion')
 OWNER_USERNAME = environ.get("OWNER_USERNAME", "https://t.me/Ask_any_Movie_1")
-UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/KFCINEMAS')
+UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/+Gw1YhDuUdNU1Mjll')
 FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/allMoviediscussion_1')
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/KFCINEMAS")
 VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/KFCINEMAS")

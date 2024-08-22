@@ -64,16 +64,16 @@ else:
     SUPPORT_GROUP = int(SUPPORT_GROUP)
 
 # MongoDB information
-DATABASE_URL = environ.get('DATABASE_URL', "mongodb+srv://kfcinemas:kfcinemasmovie@cluster0.m8diz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URL = environ.get('DATABASE_URL', "mongodb+srv://ybawaskar1987:bBpiCuWZ5RLKuuzg@mzfilestore.ah4tr.mongodb.net/?retryWrites=true&w=majority&appName=mzfilestore")
 if len(DATABASE_URL) == 0:
     print('Error - DATABASE_URL is missing, exiting now')
     exit()
-DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Files')
+DATABASE_NAME = environ.get('DATABASE_NAME', "mzfilestore")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'mzfilestore01')
 
 # Links
 SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/kfcienmas_dicussion')
-OWNER_USERNAME = environ.get("OWNER_USERNAME", "https://t.me/Ask_any_Movie_1")
+OWNER_USERNAME = environ.get("OWNER_USERNAME", "https://t.me/sammarathi")
 UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/+Gw1YhDuUdNU1Mjll')
 FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/allMoviediscussion_1')
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/KFCINEMAS")
@@ -105,7 +105,7 @@ LINK_MODE = is_enabled("LINK_MODE", True)
 AUTO_FILTER = is_enabled('AUTO_FILTER', True)
 IMDB = is_enabled('IMDB', True)
 SPELL_CHECK = is_enabled("SPELL_CHECK", True)
-SHORTLINK = is_enabled('SHORTLINK', True)
+SHORTLINK = is_enabled('SHORTLINK', False)
 
 #premium info
 PAYMENT_QR = environ.get('PAYMENT_QR', 'https://telegra.ph/file/d70873ccc021e6c62acec.jpg')

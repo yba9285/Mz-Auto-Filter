@@ -72,7 +72,7 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "mzfilestore")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'mzfilestore01')
 
 # Links
-SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/kfcienmas_dicussion')
+SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/+Wvp5utJI42UzZmI5')
 OWNER_USERNAME = environ.get("OWNER_USERNAME", "https://t.me/sammarathi")
 UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/+Gw1YhDuUdNU1Mjll')
 FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/allMoviediscussion_1')

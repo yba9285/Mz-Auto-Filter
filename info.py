@@ -108,8 +108,8 @@ SPELL_CHECK = is_enabled("SPELL_CHECK", True)
 SHORTLINK = is_enabled('SHORTLINK', False)
 
 #premium info
-PAYMENT_QR = environ.get('PAYMENT_QR', 'https://telegra.ph/file/d70873ccc021e6c62acec.jpg')
-OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'ujwalmayak@fam')
+PAYMENT_QR = environ.get('PAYMENT_QR', '')
+OWNER_UPI_ID = environ.get('OWNER_UPI_ID', '')
 
 # for stream
 IS_STREAM = is_enabled('IS_STREAM', True)

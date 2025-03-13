@@ -68,14 +68,14 @@ DATABASE_URL = environ.get('DATABASE_URL', "mongodb+srv://omyogesh695:K3Q1OfKBd1
 if len(DATABASE_URL) == 0:
     print('Error - DATABASE_URL is missing, exiting now')
     exit()
-DATABASE_NAME = environ.get('DATABASE_NAME', "MzFileStore")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'MzFileStore01')
+DATABASE_NAME = environ.get('DATABASE_NAME', "mzfilestore")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'mzfilestore01')
 
 # Links
 SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/MzBotzSupport')
 OWNER_USERNAME = environ.get("OWNER_USERNAME", "https://t.me/SamMarathi")
-UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/+Wvp5utJI42UzZmI5')
-FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/+Gw1YhDuUdNU1Mjll')
+UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/+Gw1YhDuUdNU1Mjll')
+FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/+Wvp5utJI42UzZmI5')
 TUTORIAL = environ.get("TUTORIAL", "")
 VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "")
 
@@ -88,7 +88,7 @@ QUALITY = [quality.lower() for quality in environ.get('QUALITY', '360p 480p 720p
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", script.IMDB_TEMPLATE)
 FILE_CAPTION = environ.get("FILE_CAPTION", script.FILE_CAPTION)
 SHORTLINK_URL = environ.get("SHORTLINK_URL", "modijiurl.com")
-SHORTLINK_API = environ.get("SHORTLINK_API", "")
+SHORTLINK_API = environ.get("SHORTLINK_API", "04d39f6f93164655a957b4ffd397defff9183148")
 VERIFY_EXPIRE = int(environ.get('VERIFY_EXPIRE', 86400)) # Add time in seconds
 WELCOME_TEXT = environ.get("WELCOME_TEXT", script.WELCOME_TEXT)
 INDEX_EXTENSIONS = [extensions.lower() for extensions in environ.get('INDEX_EXTENSIONS', 'mp4 mkv').split()]
@@ -108,8 +108,8 @@ SPELL_CHECK = is_enabled("SPELL_CHECK", True)
 SHORTLINK = is_enabled('SHORTLINK', False)
 
 #premium info
-PAYMENT_QR = environ.get('PAYMENT_QR', '')
-OWNER_UPI_ID = environ.get('OWNER_UPI_ID', '')
+PAYMENT_QR = environ.get('PAYMENT_QR', 'https://envs.sh/bNP.jpg')
+OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'mr.yogiraaj@ibl')
 
 # for stream
 IS_STREAM = is_enabled('IS_STREAM', True)

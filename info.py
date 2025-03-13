@@ -76,8 +76,8 @@ SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/MzBotzSupport')
 OWNER_USERNAME = environ.get("OWNER_USERNAME", "https://t.me/SamMarathi")
 UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/+Gw1YhDuUdNU1Mjll')
 FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/+Wvp5utJI42UzZmI5')
-TUTORIAL = environ.get("TUTORIAL", "")
-VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "")
+TUTORIAL = environ.get("TUTORIAL", "https://t.me/how_to_open_modijilink/2")
+VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/how_to_open_modijilink/2")
 
 # Bot settings
 DELETE_TIME = int(environ.get('DELETE_TIME', 3600)) # Add time in seconds

@@ -17,13 +17,13 @@ def is_valid_ip(ip):
     return re.match(ip_pattern, ip) is not None
 
 # Bot information
-API_ID = environ.get('API_ID', '')
+API_ID = environ.get('API_ID', '25953006')
 if len(API_ID) == 0:
     print('Error - API_ID is missing, exiting now')
     exit()
 else:
     API_ID = int(API_ID)
-API_HASH = environ.get('API_HASH', '')
+API_HASH = environ.get('API_HASH', 'd5850aeef7dd3d01fe6b698c0a0d4be8')
 if len(API_HASH) == 0:
     print('Error - API_HASH is missing, exiting now')
     exit()
@@ -34,7 +34,7 @@ if len(BOT_TOKEN) == 0:
 PORT = int(environ.get('PORT', '80'))
 
 # Bot pics
-PICS = (environ.get('PICS', '')).split()
+PICS = (environ.get('PICS', 'https://graph.org/file/22ce3d5cb36e0fd62a728.jpg')).split()
 
 # Bot Admins
 ADMINS = environ.get('ADMINS', '5673859971')
@@ -74,8 +74,8 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'MzFileStore01')
 # Links
 SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/MzBotzSupport')
 OWNER_USERNAME = environ.get("OWNER_USERNAME", "https://t.me/SamMarathi")
-UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/HA_Bots')
-FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/HA_Films_World')
+UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/+Wvp5utJI42UzZmI5')
+FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/+Gw1YhDuUdNU1Mjll')
 TUTORIAL = environ.get("TUTORIAL", "")
 VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "")
 

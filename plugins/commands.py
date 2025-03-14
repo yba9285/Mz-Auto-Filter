@@ -107,7 +107,7 @@ async def start(client, message):
             ],[
                 InlineKeyboardButton('🗳 Tutorial 🗳', url=VERIFY_TUTORIAL)
             ]]
-            await message.reply("You not verified today! Please verify and get unlimited (VIP) Access For Next 24 Hours.💖\n\nइस बोट का इस्तेमाल करने के लिये आपको VERIFY करना होगा. नही तो आप इसका इस्तेमाल नहीं कर पायेंगे | Verify करने के बाद 24 घंटे के लिये आप इस बोट का इस्तेमाल कर सकते हैं. 🔐", reply_markup=InlineKeyboardMarkup(btn), protect_content=True)
+            await message.reply("You not verified today! Please verify and get unlimited (VIP) Access For Next 24 Hours.💖\n\nइस बोट का इस्तेमाल करने के लिये आपको VERIFY करना होगा. नही तो आप इसका इस्तेमाल नहीं कर पायेंगे | Verify करने के बाद 24 घंटे के लिये आप इस बोट का इस्तेमाल कर सकते हैं. 🔐", reply_markup=InlineKeyboardMarkup(btn), protect_content=False)
             return
 
     settings = await get_settings(int(mc.split("_", 2)[1]))
@@ -193,7 +193,7 @@ async def start(client, message):
             ],[
                 InlineKeyboardButton("📍 ʜᴏᴡ ᴛᴏ ᴏᴘᴇɴ ʟɪɴᴋ 📍", url=settings['tutorial'])
             ]]
-            await message.reply(f"[{get_size(files.file_size)}] {files.file_name}\n\nYour file is ready, Please get using this link. 👍", reply_markup=InlineKeyboardMarkup(btn), protect_content=True)
+            await message.reply(f"[{get_size(files.file_size)}] {files.file_name}\n\nYour file is ready, Please get using this link. 👍", reply_markup=InlineKeyboardMarkup(btn), protect_content=False)
             return
             
     CAPTION = settings['caption']
@@ -222,7 +222,7 @@ async def start(client, message):
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
-        protect_content=False if await db.has_premium_access(message.from_user.id) else True,
+        protect_content=True if await db.has_premium_access(message.from_user.id) else True,
         reply_markup=InlineKeyboardMarkup(btn)
     )
     time = get_readable_time(PM_FILE_DELETE_TIME)
